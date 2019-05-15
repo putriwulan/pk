@@ -1,0 +1,45 @@
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" 
+, initial-scale=1, shrink-to-fit="no">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+	<title>login</title>
+</head>
+<body>
+<div style="width:200px; position:relative; left:600px">
+    <label for="nama">Name</label>
+    <input type="text" id="nama1" class="form-control" placeholder="masukkan nama">
+    <input type="password" id="password1" class="form-control" placeholder="masukkan password">
+    <button type="button" value="sumit" onClick="aaa();">send</button>
+    </div>
+    
+    <script type="text/javascript">
+	function aaa(){
+		var nama = document.getElementById("nama1").value;
+		var password = document.getElementById("password1").value;
+		if (nama == "putri1"){
+			if (password == "putri123"){
+			window.location="home.html";
+			}
+			else{
+				alert("password salah");
+			}
+		}
+		else if (nama == "putri2"){
+			if (password == "putri1234"){
+			window.location="home.html";
+			}
+			else{
+				alert("password salah");
+			}
+		}
+		else{
+			alert("nama salah");
+		}
+	}
+    </script>
+</body></html>
